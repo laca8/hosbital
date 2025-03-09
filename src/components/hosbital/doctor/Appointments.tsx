@@ -1,4 +1,3 @@
-import React from 'react'
 import { Tabs, TabsList, TabsTrigger } from '../../ui/tabs';
 import { Clock, MapPin } from 'lucide-react';
 const Appointments = () => {

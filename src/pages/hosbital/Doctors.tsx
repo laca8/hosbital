@@ -1,4 +1,3 @@
-import React from 'react';
 import { Mail, ListFilter } from 'lucide-react';
 import {
     Table,

@@ -27,7 +27,7 @@ const Patient = () => {
 
     })
     const handleChange = (e: React.ChangeEvent, name: string, value: string) => {
-        console.log(name);
+        console.log(name, e);
 
         setFormPatient({
             ...formPatient,

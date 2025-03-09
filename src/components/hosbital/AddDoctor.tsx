@@ -76,13 +76,15 @@ function AddDoctor() {
     }
     // const handleChangeBranches = ()
     const handleChange = (e: React.ChangeEvent, name: string, value: string) => {
-        console.log(name);
+        console.log(name, e);
         setFormDoctor({
             ...formDoctor,
             [name]: value
         })
     }
     const handleBranchesArr = (index: number, e: React.ChangeEvent, name: string, value: string) => {
+        console.log(e);
+
         const branchesExist = branches
         const updatedBranches = branchesExist.map((x, i) => {
             if (i === index) {
@@ -168,7 +170,7 @@ function AddDoctor() {
 
                         </div>
                         {
-                            branches?.map((branch, index) => (
+                            branches?.map((_, index) => (
                                 <Card key={index} className="p-1 mb-2 mt-2">
 
                                     <div className="mt-2 grid grid-cols-3 gap-2 " >

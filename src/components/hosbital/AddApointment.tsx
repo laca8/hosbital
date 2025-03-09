@@ -36,7 +36,7 @@ function AddApointment() {
 
     // const handleChangeBranches = ()
     const handleChange = (e: React.ChangeEvent, name: string, value: string) => {
-        console.log(name);
+        console.log(name, e);
         setFormAppoint({
             ...formAppoint,
             [name]: value

@@ -28,6 +28,8 @@ export default function SignInForm() {
 
     const navigator = useNavigate()
     const handleChange = (e: React.ChangeEvent, name: string, value: string) => {
+        console.log(e);
+
         setFormData({
             ...formData,
             [name]: value
